@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review.er</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/review.css">
+
+</head>
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- header section starts  -->
+
+<header class="header">
+    <script src="script.js"></script>
+
+    <a href="index.html" class="logo"> <i class="fas fa-star"></i> review.er </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#charts">Charts</a>
+    </nav>
+
+    <div class="icons">
+
+        <a class="fas fa-user" id="login-btn" href="login.html"></a>
+    </div>
+
+</header>
+
+
+<!-- login section starts -->
+
+
+<form>
+    <!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"><span>Review</span> </h1>
+
+    <div class="l1">
+
+        <div class="l2">
+
+
+
+            <img src="https://cdn.icon-icons.com/icons2/505/PNG/512/blue-book-red-ribbon_icon-icons.com_49296.png" class="rounded float-left" alt="...">
+
+            <div class="areareview">
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+                <h3>Projeto 1</h3>
+                <br>
+
+                <span class="curso">Curso:</span>
+                <p>Análise e Desenvolvimento De Sistemas</p>
+
+                <br>
+                <span class="ano">Ano:</span>
+                <p>2021</p>
+
+                <br>
+                <span class="universidade">Universidade:</span>
+                <p>Fatec Cruzeiro</p>
+
+                <br>
+                <span class="orientador">Orientador:</span>
+                <p>Eduardo Enari</p>
+
+                <br>
+                <span class="autores">Autores:</span>
+                <p>Alberto, Aline, Breno, João Braga e Pedro Henrique</p>
+
+
+            </div>
+
+        <div class="media">
+
+            <span class="rounded-circle text-center">7.5</span>
+            <div class="rounded-circle"> </div>
+
+        </div>
+
+        <div class="media_publico">
+
+            <span class="rounded-circle text-center">7.5</span>
+            <div class="rounded-circle"> </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+<!-- Botão que irá abrir o modal -->
+<button type="button" class="btn btn-lg mt-2 ml-2" data-toggle="modal" data-target="#meuModal">Escreva sua review</button>
+
+<!-- Modal -->
+<div id="meuModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Conteúdo do modal-->
+    <div class="modal-content">
+
+      <!-- Cabeçalho do modal -->
+      <div class="modal-header">
+        <h1 class="modal-name"> Review: Projeto 1 <h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Corpo do modal -->
+      <div class="modal-body">
+        <div class="form-group">
+
+            <h1> Para escrever sua review...</h1>
+            <p>Separe em critérios toda a sua análise crítica, podendo ser em criatividade, coerência, documentação, algoritmo etc. Você faz a sua metodologia</p>
+
+            <a class="avaliar" href="javascript:void(0)" onclick="Avaliar(1)">
+                <img src="image/estrelavazia.png" id="s1"></a>
+
+                <a href="javascript:void(0)" onclick="Avaliar(2)">
+                <img src="image/estrelavazia.png" id="s2"></a>
+
+                <a href="javascript:void(0)" onclick="Avaliar(3)">
+                <img src="image/estrelavazia.png" id="s3"></a>
+
+                <a href="javascript:void(0)" onclick="Avaliar(4)">
+                <img src="image/estrelavazia.png" id="s4"></a>
+
+                <a href="javascript:void(0)" onclick="Avaliar(5)">
+                <img src="image/estrelavazia.png" id="s5"></a>
+
+                <h1 id="rating">0</h1>
+
+            <label for="exampleFormControlTextarea1">Escreva sua review</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+
+
+          </div>
+
+      <!-- Rodapé do modal-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</section>
+
+<!-- features section ends -->
+</form>
+
+<form>
+    <!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"><span>Reviews Oficiais</span> </h1>
+
+    <div class="reviewsoficiais">
+    <div class="l1">
+
+        <div class="l2">
+
+            <img src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4792989A2" class="rounded-circle" alt="...">
+
+            <div class="areareview">
+                <h3>Eduardo Enari</h3>
+                <br>
+
+                <span class="disciplina">Disciplina:</span>
+                <p>Arquitetura de Software</p>
+
+                <br>
+                <p class="resenha">Avaliação do professor oficializado será colocada aqui de maneira breve e rápida rápida rápida rápida rápida </p>
+
+
+            </div>
+
+        <div class="media">
+
+            <span class="rounded-circle text-center">7.5</span>
+            <div class="rounded-circle"> </div>
+
+        </div>
+
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+<section class="features" id="features">
+
+    <h1 class="heading"><span>Reviews do público</span> </h1>
+
+    <div class="reviewsoficiais">
+    <div class="l1">
+
+
+
+        <div class="l2">
+
+
+
+            <img src="https://capricho.abril.com.br/wp-content/uploads/2019/07/millie-bobby-brown-rabo-de-cavalo-alto.jpg" class="rounded-circle" alt="...">
+
+            <div class="areareview">
+
+
+                <h3>Millie</h3>
+                <br>
+
+                <br>
+                <p class="resenha">Avaliação do professor oficializado será colocada aqui de maneira breve e rápida rápida rápida rápida rápida </p>
+
+
+            </div>
+
+        <div class="media">
+
+            <span class="rounded-circle text-center">7.5</span>
+            <div class="rounded-circle"> </div>
+
+        </div>
+
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+<!-- features section ends -->
+</form>
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> Fatecritic <i class="fas fa-star"></i> </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> mr. web designer </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+</div>
+
+
+</body>
+</html>
